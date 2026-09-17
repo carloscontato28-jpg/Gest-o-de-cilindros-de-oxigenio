@@ -23,9 +23,10 @@ As interfaces do Google Stitch possuem um menu lateral (Sidebar) e um cabeçalho
 
 ## 3. Configuração do Backend (Supabase)
 O projeto depende do Supabase para banco de dados e autenticação.
+(Credenciais fornecidas: URL: `https://lejngceikccqvbithqeb.supabase.co`, Key: `sb_publishable_Nq6F6m9djpW2eU8l2fDHfA_LYSRUg2t`)
 
 **Ações:**
-- Criar `js/supabase.js` contendo a inicialização do client Supabase (`window.supabaseClient = supabase.createClient(...)`).
+- Criar `js/supabase.js` contendo a inicialização do client Supabase (`window.supabaseClient = supabase.createClient('https://lejngceikccqvbithqeb.supabase.co', 'sb_publishable_Nq6F6m9djpW2eU8l2fDHfA_LYSRUg2t')`).
 - Executar o script `Specs/esquema_supabase_oxigenoterapia.sql` no painel do Supabase para criar as tabelas, RLS e funções.
 - Criar serviços modulares (`js/services/auth.js`, `js/services/pacientes.js`, etc.) para encapsular as chamadas ao banco.
 
